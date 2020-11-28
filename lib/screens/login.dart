@@ -144,6 +144,14 @@ class _LoginPageState extends State<LoginPage> {
         child: new Container(
             padding: const EdgeInsets.all(16.0),
             child: new Column(children: [
+              Container(
+                  clipBehavior: Clip.hardEdge,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  child: Image.asset('assets/images/logo.jpeg')),
+              SizedBox(
+                height: 10,
+              ),
               new Card(
                   child: new Column(
                       mainAxisSize: MainAxisSize.min,

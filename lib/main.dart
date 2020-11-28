@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'auth_helper.dart';
 import 'colors.dart';
+import 'common.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,7 +39,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   String title = "";
-
+  String selectedMenu = "Home";
+  Widget page = Home();
   @override
   initState() {
     super.initState();
@@ -51,6 +53,13 @@ class _MyHomePageState extends State<MyHomePage> {
     } else {
       title = "CRC Work";
     }
+  }
+
+  void changeMenu(String menu) {
+    selectedMenu = menu;
+    setState(() {
+      page = Helper.getPage(menu);
+    });
   }
 
   void _refreshPage() {
@@ -66,28 +75,122 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  getMenuTextStyle(bool isSelected) {
+    return TextStyle(
+        color: !isSelected
+            ? AppColor.footerTextColor
+            : AppColor.footerTextColorSelected,
+        fontWeight: !isSelected ? FontWeight.normal : FontWeight.bold,
+        fontSize: !isSelected ? 15 : 16);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: Auth.user == null
+          ? SizedBox(
+              height: 1,
+            )
+          : Container(
+              color: AppColor.footerColor,
+              height: 50,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 10,
+                    ),
+                    GestureDetector(
+                        onTap: () {
+                          changeMenu("Home");
+                        },
+                        child: Text(
+                          "Home",
+                          style: getMenuTextStyle(selectedMenu == "Home"),
+                        )),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    GestureDetector(
+                        onTap: () {
+                          changeMenu("About");
+                        },
+                        child: Text(
+                          "About",
+                          style: getMenuTextStyle(selectedMenu == "About"),
+                        )),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    GestureDetector(
+                        onTap: () {
+                          changeMenu("Industry Sectors");
+                        },
+                        child: Text(
+                          "Industry Sectors",
+                          style: getMenuTextStyle(
+                              selectedMenu == "Industry Sectors"),
+                        )),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    GestureDetector(
+                        onTap: () {
+                          changeMenu("Global Reach");
+                        },
+                        child: Text(
+                          "Global Reach",
+                          style:
+                              getMenuTextStyle(selectedMenu == "Global Reach"),
+                        )),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    GestureDetector(
+                        onTap: () {
+                          changeMenu("Resourcing");
+                        },
+                        child: Text(
+                          "Resourcing",
+                          style: getMenuTextStyle(selectedMenu == "Resourcing"),
+                        )),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    GestureDetector(
+                        onTap: () {
+                          changeMenu("Contact");
+                        },
+                        child: Text(
+                          "Contact",
+                          style: getMenuTextStyle(selectedMenu == "Contact"),
+                        )),
+                  ],
+                ),
+              )),
       appBar: AppBar(
         title: Text(
           title,
           style: TextStyle(color: AppColor.headerTextColor),
         ),
         actions: <Widget>[
-          PopupMenuButton<String>(
-            onSelected: logout,
-            icon: Icon(Icons.account_circle_outlined),
-            itemBuilder: (BuildContext context) => [
-              PopupMenuItem<String>(
-                value: "Logout",
-                child: Text("Logout"),
-              ),
-            ],
-          )
+          Auth.user == null
+              ? Container()
+              : PopupMenuButton<String>(
+                  onSelected: logout,
+                  icon: Icon(Icons.account_circle_outlined),
+                  itemBuilder: (BuildContext context) => [
+                    PopupMenuItem<String>(
+                      value: "Logout",
+                      child: Text("Logout"),
+                    ),
+                  ],
+                )
         ],
         backgroundColor: AppColor.headerColor,
       ),
+
       body: Center(
           // Center is a layout widget. It takes a single child and positions it
           // in the middle of the parent.
@@ -95,7 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ? LoginPage(
                   onSignIn: _refreshPage,
                 )
-              : Home()),
+              : page),
 
       // This trailing comma makes auto-formatting nicer for build methods.
     );
