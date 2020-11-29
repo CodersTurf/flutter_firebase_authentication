@@ -10,6 +10,6 @@ class AppColor {
   static Color headerTextColor = Color.fromRGBO(255, 255, 255, 1);
   static Color buttonTextColor = Color.fromRGBO(50, 70, 168, 1);
   static Color footerColor = Colors.black;
-  static Color footerTextColor = Color.fromRGBO(50, 70, 168, 1);;
+  static Color footerTextColor = Color.fromRGBO(50, 70, 168, 1);
   static Color footerTextColorSelected = Colors.white;
 }
