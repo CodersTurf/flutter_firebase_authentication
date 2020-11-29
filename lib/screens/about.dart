@@ -15,12 +15,9 @@ class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
 
-        appBar: AppBarDef.getAppBar('About CCR'),
-=======
         appBar: AppBarDef.getAppBar(context, 'About'),
->>>>>>> d6df438e42794dabe1e544dda4acac26c85137b0
+
         drawer: AppDrawer(),
         body: Container(
     decoration: BoxDecoration(
@@ -64,7 +61,7 @@ class _AboutState extends State<About> {
         SizedBox(height: 10,),
         Wrap(children: [
           getImageBox('ANTHONY HILTON | Director','assets/images/Anthony.jpg'),
-          getImageBox('CHRIS THOMPSON | Director','assets/images/Cris.jpg'),
+          getImageBox('CHRIS THOMPSON | Director','assets/images/Chris.jpg'),
           getImageBox('KAILASH AHUJA | Director','assets/images/Kailash.jpg'),
           getImageBox("""WAYNE BRADSHAW |
          Regional Director, New Zealand""",'assets/images/Wayne.jpg'),
