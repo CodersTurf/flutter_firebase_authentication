@@ -12,12 +12,12 @@ class AppDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           UserAccountsDrawerHeader(
+            decoration: BoxDecoration(color: Colors.red),
             accountName: Text('User Name'),
             accountEmail: Text('user.name@email.com'),
-            currentAccountPicture: CircleAvatar(
-              backgroundColor: Colors.white,
-              child: FlutterLogo(size: 42.0),
-            ),
+            currentAccountPicture: Image.asset('assets/images/logo.jpeg',width: 150,
+              height: 150,
+              fit:BoxFit.fill  ,),
             otherAccountsPictures: <Widget>[],
           ),
           ListTile(
@@ -31,15 +31,13 @@ class AppDrawer extends StatelessWidget {
               onTap: () => Navigator.pushNamed(context, 'contacts')),
           ListTile(
             title: const Text('Global Reach'),
-            onTap: () => Navigator.of(context).push(null),
-          ),
+              onTap: () => Navigator.pushNamed(context, 'global')),
           ListTile(
               title: const Text('Outsourcing'),
-              onTap: () => Navigator.of(context).push(null)),
+              onTap: () => Navigator.pushNamed(context, 'outsource')),
           ListTile(
             title: const Text('Industry Sectors'),
-            onTap: () => Navigator.of(context).push(null),
-          ),
+    onTap: () => Navigator.pushNamed(context, 'industry')),
         ],
       ),
     );
