@@ -1,3 +1,4 @@
+import 'package:ccrwork_mobile/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -15,29 +16,63 @@ class AppDrawer extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.red),
             accountName: Text('User Name'),
             accountEmail: Text('user.name@email.com'),
-            currentAccountPicture: Image.asset('assets/images/logo.jpeg',width: 150,
+            currentAccountPicture: Image.asset(
+              'assets/images/logo.jpeg',
+              width: 150,
               height: 150,
-              fit:BoxFit.fill  ,),
+              fit: BoxFit.fill,
+            ),
             otherAccountsPictures: <Widget>[],
           ),
           ListTile(
-              title: const Text('Home',style: TextStyle(color: Colors.black),),
+              title: const Text(
+                'Home',
+                style: TextStyle(color: Colors.black),
+              ),
               onTap: () => Navigator.pushNamed(context, '/')),
           ListTile(
-              title: const Text('About',style: TextStyle(color: Colors.black),),
+              title: const Text(
+                'About',
+                style: TextStyle(color: Colors.black),
+              ),
               onTap: () => Navigator.pushNamed(context, 'about')),
           ListTile(
-              title: const Text('Contacts',style: TextStyle(color: Colors.black),),
+              title: const Text(
+                'Contacts',
+                style: TextStyle(color: Colors.black),
+              ),
               onTap: () => Navigator.pushNamed(context, 'contacts')),
           ListTile(
-            title: const Text('Global Reach',style: TextStyle(color: Colors.black),),
+              title: const Text(
+                'Global Reach',
+                style: TextStyle(color: Colors.black),
+              ),
               onTap: () => Navigator.pushNamed(context, 'global')),
           ListTile(
-              title: const Text('Outsourcing',style: TextStyle(color: Colors.black),),
+              title: const Text(
+                'Outsourcing',
+                style: TextStyle(color: Colors.black),
+              ),
               onTap: () => Navigator.pushNamed(context, 'outsource')),
           ListTile(
-            title: const Text('Industry Sectors',style: TextStyle(color: Colors.black),),
-    onTap: () => Navigator.pushNamed(context, 'industry')),
+              title: const Text(
+                'Industry Sectors',
+                style: TextStyle(color: Colors.black),
+              ),
+              onTap: () => Navigator.pushNamed(context, 'industry')),
+          ListTile(
+              title: Container(
+                  width: 60,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: AppColor.mainColor)),
+                  child: Text(
+                    'Candidates',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  )),
+              onTap: () => Navigator.pushNamed(context, 'candidates')),
         ],
       ),
     );
