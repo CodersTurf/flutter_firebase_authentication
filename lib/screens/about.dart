@@ -14,7 +14,7 @@ class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarDef.getAppBar('About'),
+        appBar: AppBarDef.getAppBar(context, 'About'),
         drawer: AppDrawer(),
         body: Container(
           child: Text('About'),

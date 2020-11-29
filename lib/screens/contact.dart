@@ -1,6 +1,7 @@
 import 'package:ccrwork_mobile/api/apihelper.dart';
 import 'package:ccrwork_mobile/colors.dart';
 import 'package:ccrwork_mobile/model/contact.dart';
+import 'package:ccrwork_mobile/screens/widgets/appbar.dart';
 import 'package:ccrwork_mobile/screens/widgets/customtextfield.dart';
 import 'package:ccrwork_mobile/screens/widgets/drawer.dart';
 import 'package:flutter/material.dart';
@@ -16,11 +17,7 @@ class _ContactsState extends State<Contacts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-            title: Text(
-          "Contacts",
-          style: TextStyle(color: AppColor.headerTextColor),
-        )),
+        appBar: AppBarDef.getAppBar(context, 'Contacts'),
         drawer: AppDrawer(),
         body: Container(
             child: SingleChildScrollView(

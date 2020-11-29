@@ -1,3 +1,4 @@
+import 'package:ccrwork_mobile/screens/widgets/appbar.dart';
 import 'package:ccrwork_mobile/screens/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -68,28 +69,7 @@ class _MyHomePageState extends State<Default> {
 
       drawer: Auth.user == null ? null : AppDrawer(),
 
-      appBar: AppBar(
-        title: Text(
-          title,
-          style: TextStyle(color: AppColor.headerTextColor),
-        ),
-        actions: <Widget>[
-          Auth.user == null
-              ? Container()
-              : PopupMenuButton<String>(
-                  onSelected: logout,
-                  icon: Icon(Icons.account_circle_outlined),
-                  itemBuilder: (BuildContext context) => [
-                    PopupMenuItem<String>(
-                      value: "Logout",
-                      child: Text("Logout"),
-                    ),
-                  ],
-                )
-        ],
-        backgroundColor: AppColor.mainColor,
-      ),
-
+      appBar: AppBarDef.getAppBar(context, 'Home'),
       body: Center(
           // Center is a layout widget. It takes a single child and positions it
           // in the middle of the parent.
