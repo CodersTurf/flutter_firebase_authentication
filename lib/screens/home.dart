@@ -11,7 +11,6 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.all(15),
         decoration: BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/images/home_bck.jpg"),
@@ -20,6 +19,7 @@ class _HomeState extends State<Home> {
             child: Column(
           children: [
             Container(
+              padding: EdgeInsets.all(15),
               child: Column(
                 children: [
                   Text(
