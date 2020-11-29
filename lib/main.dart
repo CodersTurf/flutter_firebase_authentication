@@ -1,15 +1,9 @@
 import 'package:ccrwork_mobile/routing.dart';
-import 'package:ccrwork_mobile/screens/home.dart';
-import 'package:ccrwork_mobile/screens/login.dart';
-import 'package:ccrwork_mobile/screens/widgets/drawer.dart';
 import 'package:ccrwork_mobile/servicelocator.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
 import 'auth_helper.dart';
 import 'bootstrapper.dart';
-import 'colors.dart';
-import 'common.dart';
 import 'navigationservice.dart';
 
 void main() async {
