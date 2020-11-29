@@ -44,46 +44,53 @@ class _Global extends State<Global> {
     ],
     ),
     ),
-    SizedBox(
-    height: 25,
-    ),
-    getColoredBox('',
-    """Through its partnership with Plus 3 and Quantum Global Solutions effective from 6 April 2020, CCR will bring additional products, services and resources to enhance the international geographical scope and delivery of our contractual and commercial services, maintaining our existing client relationships in Australia and New Zealand while establishing new client relationships around the world."""),
-    SizedBox(
-    height: 15,
-    ),
+      Text(
+        "Through its partnership with Plus 3 and Quantum Global Solutions effective from 6 April 2020, CCR will bring additional products, services and resources to enhance the international geographical scope and delivery of our contractual and commercial services, maintaining our existing client relationships in Australia and New Zealand while establishing new client relationships around the world.""",
+        style: (TextStyle(
+            fontSize: 22, fontWeight: FontWeight.bold)),
+      ),
       SizedBox(
         height: 25,
       ),
-      getColoredBox('',
-          """“We believe the merger is a meeting of collective spirits and minds, dedicated to enhancing each of our individual services to our local and global clients under one umbrella. Working in partnership with Quantum and CCR was a natural step to share knowledge, resources and skills among our respective regions to offer our clients a cost-effective, localised hub with our renowned customer-focused approach to your projects.’’
+      Text(
+        """“We believe the merger is a meeting of collective spirits and minds, dedicated to enhancing each of our individual services to our local and global clients under one umbrella. Working in partnership with Quantum and CCR was a natural step to share knowledge, resources and skills among our respective regions to offer our clients a cost-effective, localised hub with our renowned customer-focused approach to your projects.’’
 
+      Mike McIver, CEO, Plus 3""",
 
-Mike McIver, CEO, Plus 3"""),
+        style: (TextStyle(
+            fontSize: 22, fontWeight: FontWeight.bold)),
+      ),
       SizedBox(
         height: 15,
       ),
+      Text(
+        """“The merging of our three industry specialists into one company brings great value to all three organisations. Our clients will all capitalise on our respective specialisms and we all have the ability to deliver new services to enhance our client services.',
+   
+ Tony Hilton, Director, CCR""",
+        style: (TextStyle(
+            fontSize: 22, fontWeight: FontWeight.bold)),
+      ),
+      SizedBox(
+        height: 15,
+      ),
+      
 
+      Text(
+        """“Over the past three decades, with offices in Malaysia and Hong Kong, Plus 3 has become renowned across Asia for their high level of professional consultancy services to the construction industry. The Quantum family is extremely proud to be part of the Plus 3 restructure and to be working with CCR who are already a major force in the Australian construction Sector.”
 
+Peter Murphy, Managing Director, Quantum""",
+        style: (TextStyle(
+            fontSize: 22, fontWeight: FontWeight.bold)),
+      ),
       SizedBox(
         height: 25,
       ),
-      getColoredBox('',
-          """““The merging of our three industry specialists into one company brings great value to all three organisations. Our clients will all capitalise on our respective specialisms and we all have the ability to deliver new services to enhance our client services.”
-
-
-Tony Hilton, Director, CCR"""),
       SizedBox(
         height: 15,
       ),
       SizedBox(
         height: 25,
       ),
-      getColoredBox('',
-          """““Over the past three decades, with offices in Malaysia and Hong Kong, Plus 3 has become renowned across Asia for their high level of professional consultancy services to the construction industry. The Quantum family is extremely proud to be part of the Plus 3 restructure and to be working with CCR who are already a major force in the Australian construction Sector.”
-
-
-Peter Murphy, Managing Director, Quantum"""),
       SizedBox(
         height: 15,
       ),
