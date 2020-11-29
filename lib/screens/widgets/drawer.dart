@@ -15,11 +15,12 @@ class AppDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           UserAccountsDrawerHeader(
-            decoration: BoxDecoration(color: Colors.red),
+            decoration: BoxDecoration(color: Color.fromRGBO(0, 0,0,0.5)),
             accountName: Text('Logged User'),
             accountEmail: Text(Auth.user.email),
+
             currentAccountPicture: Image.asset(
-              'assets/images/logo.jpeg',
+              'assets/images/0.jpg',
               width: 150,
               height: 150,
               fit: BoxFit.fill,
