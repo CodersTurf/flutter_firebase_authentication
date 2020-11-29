@@ -1,6 +1,8 @@
 import 'package:ccrwork_mobile/colors.dart';
 import 'package:flutter/material.dart';
 
+import '../../auth_helper.dart';
+
 class AppDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,8 +16,9 @@ class AppDrawer extends StatelessWidget {
         children: <Widget>[
           UserAccountsDrawerHeader(
             decoration: BoxDecoration(color: Color.fromRGBO(0, 0,0,0.5)),
-            accountName: Text('User Name'),
-            accountEmail: Text('user.name@email.com'),
+            accountName: Text('Logged User'),
+            accountEmail: Text(Auth.user.email),
+
             currentAccountPicture: Image.asset(
               'assets/images/0.jpg',
               width: 150,
