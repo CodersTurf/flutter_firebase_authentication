@@ -15,7 +15,7 @@ class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
- 
+
 
         appBar: AppBarDef.getAppBar(context, 'About'),
 
@@ -55,7 +55,6 @@ class _AboutState extends State<About> {
    
    
    We are more than able to successfully manage and deliver on both domestic and international projects utilising our expertise in, contract and commercial advice, procurement, estimating, planning and scheduling, claims preparation, construction management, dispute resolution, and more. Our core priority is to effectively transform traditional engineering and construction projects into commercially successful, sustainable business infrastructure which directly benefit both our clients and partners. Our expertise and unparalleled track record in both visionary project consultancy and advanced resourcing management has established our reputation in the field."""),
-<<<<<<< HEAD
     SizedBox(
     height: 15,
     ),
@@ -74,32 +73,10 @@ class _AboutState extends State<About> {
         ]),
       ],)
     ),
-=======
                       SizedBox(
                         height: 15,
                       ),
-                      Container(
-                          child: Column(
-                        children: [
-                          Text('Our Management team'),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Wrap(children: [
-                            getImageBox('ANTHONY HILTON | Director',
-                                'assets/images/Anthony.jpg'),
-                            getImageBox('CHRIS THOMPSON | Director',
-                                'assets/images/Cris.jpg'),
-                            getImageBox('KAILASH AHUJA | Director',
-                                'assets/images/Kailash.jpg'),
-                            getImageBox("""WAYNE BRADSHAW |
-         Regional Director, New Zealand""", 'assets/images/Wayne.jpg'),
-                            getImageBox("""CATHERINE WILLIAMS |
-         Manager, Planning & Programming""", 'assets/images/Catherine.jpg'),
-                          ]),
-                        ],
-                      )),
-                      SizedBox(
+                                       SizedBox(
                         height: 20,
                       ),
                     ],
@@ -109,8 +86,6 @@ class _AboutState extends State<About> {
               ],
             ))));
   }
->>>>>>> b2287e8ca31ca59fdd0f699f2c4aaed24308e102
-
   getImageBox(String name, String image) {
     return Column(children: [
       Image.asset(image),
@@ -122,9 +97,10 @@ class _AboutState extends State<About> {
   }
 
   getColoredBox(String header, String text) {
+    Color color;
     return Container(
         padding: EdgeInsets.all(18),
-        color: AppColor.mainColor,
+        color: color = Color.fromRGBO(240, 136, 46,0.5),
         child: Column(children: [
           Row(
             children: [

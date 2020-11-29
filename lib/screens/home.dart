@@ -64,9 +64,10 @@ We’ve carefully built a pool of highly experienced and available talent that a
   }
 
   getColoredBox(String header, String text) {
+    Color color;
     return Container(
         padding: EdgeInsets.all(18),
-        color: AppColor.mainColor,
+        color:color = Color.fromRGBO(240, 136, 46,0.5),
         child: Column(children: [
           Row(
             children: [
