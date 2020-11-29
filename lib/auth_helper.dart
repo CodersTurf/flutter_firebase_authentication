@@ -19,7 +19,6 @@ class Auth implements BaseAuth {
   static User user;
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   static initialize() async {
-    await Firebase.initializeApp();
     FirebaseAuth.instance.authStateChanges().listen((User u) {
       if (u == null) {
         print('User is currently signed out!');
