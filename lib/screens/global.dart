@@ -14,7 +14,7 @@ class _Global extends State<Global> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarDef.getAppBar('Global'),
+        appBar: AppBarDef.getAppBar(context, 'Global'),
         drawer: AppDrawer(),
         body: Container(
           child: Text('Global'),

@@ -7,14 +7,14 @@ import '../colors.dart';
 
 class OutSource extends StatefulWidget {
   @override
-  _OutSource  createState() => _OutSource ();
+  _OutSource createState() => _OutSource();
 }
 
-class _OutSource  extends State<OutSource > {
+class _OutSource extends State<OutSource> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarDef.getAppBar('OutSource'),
+        appBar: AppBarDef.getAppBar(context, 'OutSource'),
         drawer: AppDrawer(),
         body: Container(
           child: Text('OutSource'),

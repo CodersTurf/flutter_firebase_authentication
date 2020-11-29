@@ -14,7 +14,7 @@ class _Industry extends State<Industry> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarDef.getAppBar('Industry'),
+        appBar: AppBarDef.getAppBar(context, 'Industry'),
         drawer: AppDrawer(),
         body: Container(
           child: Text('Industry'),

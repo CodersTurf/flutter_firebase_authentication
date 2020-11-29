@@ -142,12 +142,16 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return new SingleChildScrollView(
         child: new Container(
+            height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage("assets/images/front.jpg"),
                     fit: BoxFit.cover)),
-            padding: const EdgeInsets.fromLTRB(16,0,16,0),
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
             child: new Column(children: [
+              SizedBox(
+                height: 30,
+              ),
               Container(
                   clipBehavior: Clip.hardEdge,
                   decoration: BoxDecoration(
