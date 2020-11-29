@@ -1,4 +1,5 @@
 import 'package:ccrwork_mobile/screens/about.dart';
+import 'package:ccrwork_mobile/screens/candidates.dart';
 import 'package:ccrwork_mobile/screens/contact.dart';
 import 'package:ccrwork_mobile/screens/default.dart';
 import 'package:ccrwork_mobile/screens/global.dart';
@@ -16,6 +17,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (_) => About());
     case 'contacts':
       return MaterialPageRoute(builder: (_) => Contacts());
+    case 'candidates':
+      return MaterialPageRoute(builder: (_) => CandidateForm());
     case 'global':
       return MaterialPageRoute(builder: (_) => Global());
     case 'outsource':
