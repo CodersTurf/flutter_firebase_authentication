@@ -188,7 +188,7 @@ class _SubmitActionState extends State<SubmitAction> {
                 widget.isSubmit = false;
                 // setState(() {});
                 var snackBar =
-                    SnackBar(content: Text('Your message has been sent!'));
+                    SnackBar(content: Text('Your details has been submitted!'));
                 Scaffold.of(context).showSnackBar(snackBar);
               } catch (Exception) {
                 var snackBar = SnackBar(content: Text('Some error occurred!'));
