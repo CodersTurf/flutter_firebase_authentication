@@ -30,7 +30,8 @@ dependencies:
   cupertino_icons: ^1.0.0
   firebase_auth: ^0.18.3+1
   cloud_firestore:
-  get_it:  
+  get_it:
+  carousel_slider: ^2.3.1    
   firebase_core: ^0.5.2+1
  
   flutter_spinkit:

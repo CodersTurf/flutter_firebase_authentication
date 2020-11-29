@@ -67,6 +67,7 @@ class _MyHomePageState extends State<Default> {
       backgroundColor: Colors.white,
 
       drawer: Auth.user == null ? null : AppDrawer(),
+
       appBar: AppBar(
         title: Text(
           title,
