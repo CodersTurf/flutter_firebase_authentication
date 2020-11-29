@@ -53,7 +53,7 @@ class AppDrawer extends StatelessWidget {
               onTap: () => Navigator.pushNamed(context, 'global')),
           ListTile(
               title: const Text(
-                'Outsourcing',
+                'Resourcing',
                 style: TextStyle(color: Colors.black),
               ),
               onTap: () => Navigator.pushNamed(context, 'outsource')),

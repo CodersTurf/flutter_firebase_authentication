@@ -1,4 +1,5 @@
 import 'package:ccrwork_mobile/colors.dart';
+import 'package:ccrwork_mobile/screens/looter.dart';
 import 'package:ccrwork_mobile/screens/widgets/footer.dart';
 import 'package:flutter/material.dart';
 
@@ -28,15 +29,23 @@ class _HomeState extends State<Home> {
                         (TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
                   ),
                   SizedBox(
-                    height: 15,
+                    height: 10,
                   ),
                   Text(
                     'Transforming Infrastructure Projects into Commercial Success.',
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(
+
+                    height:10,
+                  ),
+                  Looter(),
+                  SizedBox(
                     height: 25,
                   ),
+
+
+
                   getColoredBox("Project Consultancy",
                       """CCR provides a comprehensive range of construction and engineering services managed by our highly qualified teams of engineers, quantity surveyors, project managers, commercial managers and legal advisors.
 We are more than able to successfully manage and deliver on both domestic and international projects utilising our expertise in, contract and commercial advice, procurement, estimating, planning and scheduling, claims preparation, construction management, dispute resolution, and more.

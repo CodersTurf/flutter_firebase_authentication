@@ -4,8 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
-class Footer extends StatelessWidget {
-  var imgList = [1, 2, 3, 4, 5, 6, 7, 8];
+class Looter extends StatelessWidget {
+  var imgList = [1, 2, 3, 4, 5];
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,21 +13,22 @@ class Footer extends StatelessWidget {
         child: Column(children: [
           Container(
             width: double.infinity,
-            height: 50,
+
             color: AppColor.mainColor,
-            child: Center(child: Text('Clients We Work With')),
-          ),
+            ),
           CarouselSlider(
-            options: CarouselOptions(autoPlay: true, height: 100),
+            options: CarouselOptions(autoPlay: true,autoPlayInterval: Duration(seconds: 2), viewportFraction: 1, height: 300),
             items: imgList
                 .map((item) => Container(
-                      child: Center(
-                        child: Image.asset(
-                          'assets/images/comp_${item.toString()}.jpg',
-                          height: 100,
-                        ),
-                      ),
-                    ))
+              child: Center(
+                child: Image.asset(
+                  'assets/images/cam_${item.toString()}.jpg',
+                   width: 800,
+                  height: 700,
+                   fit:BoxFit.fill
+                ),
+              ),
+            ))
                 .toList(),
           )
         ]));
