@@ -14,8 +14,8 @@ class AppBarDef {
         Auth.user == null
             ? Container()
             : PopupMenuButton<String>(
-                onSelected: (data) {
-                  Auth().signOut();
+                onSelected: (data) async {
+                  await Auth().signOut();
                   Navigator.pushNamed(context, '/');
                 },
                 icon: Icon(Icons.account_circle_outlined),

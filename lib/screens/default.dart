@@ -69,7 +69,7 @@ class _MyHomePageState extends State<Default> {
 
       drawer: Auth.user == null ? null : AppDrawer(),
 
-      appBar: AppBarDef.getAppBar(context, 'Home'),
+      appBar: AppBarDef.getAppBar(context, title),
       body: Center(
           // Center is a layout widget. It takes a single child and positions it
           // in the middle of the parent.
