@@ -21,22 +21,22 @@ class AppDrawer extends StatelessWidget {
             otherAccountsPictures: <Widget>[],
           ),
           ListTile(
-              title: const Text('Home'),
+              title: const Text('Home',style: TextStyle(color: Colors.black),),
               onTap: () => Navigator.pushNamed(context, '/')),
           ListTile(
-              title: const Text('About'),
+              title: const Text('About',style: TextStyle(color: Colors.black),),
               onTap: () => Navigator.pushNamed(context, 'about')),
           ListTile(
-              title: const Text('Contacts'),
+              title: const Text('Contacts',style: TextStyle(color: Colors.black),),
               onTap: () => Navigator.pushNamed(context, 'contacts')),
           ListTile(
-            title: const Text('Global Reach'),
+            title: const Text('Global Reach',style: TextStyle(color: Colors.black),),
               onTap: () => Navigator.pushNamed(context, 'global')),
           ListTile(
-              title: const Text('Outsourcing'),
+              title: const Text('Outsourcing',style: TextStyle(color: Colors.black),),
               onTap: () => Navigator.pushNamed(context, 'outsource')),
           ListTile(
-            title: const Text('Industry Sectors'),
+            title: const Text('Industry Sectors',style: TextStyle(color: Colors.black),),
     onTap: () => Navigator.pushNamed(context, 'industry')),
         ],
       ),
