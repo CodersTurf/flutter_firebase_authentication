@@ -15,10 +15,9 @@ class AppDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           UserAccountsDrawerHeader(
-            decoration: BoxDecoration(color: Color.fromRGBO(0, 0,0,0.5)),
+            decoration: BoxDecoration(color: Color.fromRGBO(0, 0, 0, 0.5)),
             accountName: Text('Logged User'),
             accountEmail: Text(Auth.user.email),
-
             currentAccountPicture: Image.asset(
               'assets/images/0.jpg',
               width: 150,
@@ -68,14 +67,15 @@ class AppDrawer extends StatelessWidget {
                   width: 60,
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: AppColor.mainColor)),
+                      border: Border(top: BorderSide(color: Colors.grey[400]))),
                   child: Text(
-                    'Candidates',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
+                    'Logout',
+                    style: TextStyle(color: Colors.black),
                   )),
-              onTap: () => Navigator.pushNamed(context, 'candidates')),
+              onTap: () async {
+                await Auth().signOut();
+                Navigator.pushNamed(context, 'home');
+              }),
         ],
       ),
     );

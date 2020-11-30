@@ -15,8 +15,9 @@ class _Global extends State<Global> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarDef.getAppBar(context, 'Global Reach'),
+        appBar: AppBarDef.getAppBar(context, 'Global Reach', true),
         drawer: AppDrawer(),
+
         body:  Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
@@ -97,7 +98,7 @@ Peter Murphy, Managing Director,Quantum""",
                     Footer()
                   ],
                 ))));
-  }
+}
 
   getImageBox(String name, String image) {
     return Column(children: [
@@ -129,9 +130,9 @@ Peter Murphy, Managing Director,Quantum""",
             children: [
               Flexible(
                   child: Text(
-                    text,
-                    textAlign: TextAlign.start,
-                  ))
+                text,
+                textAlign: TextAlign.start,
+              ))
             ],
           )
         ]));

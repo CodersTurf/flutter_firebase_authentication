@@ -4,29 +4,29 @@ import '../../auth_helper.dart';
 import '../../colors.dart';
 
 class AppBarDef {
-  static getAppBar(BuildContext context, title) {
+  static getAppBar(BuildContext context, title, bool showCandidate) {
     return AppBar(
-      title: Text(
-        title,
-        style: TextStyle(color: AppColor.headerTextColor),
-      ),
-      actions: <Widget>[
-        Auth.user == null
-            ? Container()
-            : PopupMenuButton<String>(
-                onSelected: (data) async {
-                  await Auth().signOut();
-                  Navigator.pushNamed(context, '/');
-                },
-                icon: Icon(Icons.account_circle_outlined),
-                itemBuilder: (BuildContext context) => [
-                  PopupMenuItem<String>(
-                    value: "Logout",
-                    child: Text("Logout"),
-                  ),
-                ],
-              )
-      ],
+      title: Container(
+          width: double.infinity,
+          child:
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+            Text(title, style: TextStyle(color: AppColor.headerTextColor)),
+            showCandidate
+                ? Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.white54)),
+                    padding: EdgeInsets.all(5),
+                    child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, 'candidates');
+                        },
+                        child: Text('Candidates',
+                            style: TextStyle(
+                                color: Colors.white70, fontSize: 13))))
+                : Container()
+          ])),
+      actions: <Widget>[],
       backgroundColor: AppColor.mainColor,
     );
   }

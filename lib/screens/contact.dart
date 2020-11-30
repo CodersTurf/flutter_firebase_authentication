@@ -17,7 +17,7 @@ class _ContactsState extends State<Contacts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarDef.getAppBar(context, 'Contacts'),
+        appBar: AppBarDef.getAppBar(context, 'Contacts', false),
         drawer: AppDrawer(),
         body:
         Container(
@@ -273,14 +273,8 @@ class _SubmitActionState extends State<SubmitAction> {
     return Row(
       children: [
         Expanded(
-            child: widget.isSubmit
-                ? SpinKitCircle(
-                    color: Colors.white,
-                    size: 25.0,
-                  )
-                : Container()),
-        Expanded(
             child: RaisedButton(
+          padding: EdgeInsets.all(15),
           color: Colors.black,
           onPressed: () async {
             if (widget._formKey.currentState.validate()) {
