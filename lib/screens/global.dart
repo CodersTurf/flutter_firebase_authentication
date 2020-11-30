@@ -67,6 +67,46 @@ Tony Hilton, Director, CCR""",
 Peter Murphy, Managing Director,Quantum""",
                           ),
                           SizedBox(
+                            height: 35,
+                          ),
+                          Container(
+                              child: Column(
+                                children: [
+                                  Text('Plus 3 Key Facts'),
+                                  SizedBox(
+                                    height: 35,
+                                  ),
+                                  Wrap(children: [
+                                    getImageBox("""Three Companies - One Name,
+              From 6 April 2020, Plus 3, CCR and Quantum will partner together under the Plus 3 brand throughout Asia as one team with shared corporate and personal values to provide enhanced services to our clients.""",
+                                        'assets/images/one.png',),
+                                    SizedBox(
+                                      height: 15,
+                                    ),
+                                    getImageBox("""Global Reach,Plus 3’s global partnerships extends to Malaysia, Hong Kong, UK, Spain, Switzerland, Turkey, Jordan, KSA, UAE, Qatar, China, South Korea, Australia, New Zealand, the USA and Asia.""",
+                                        'assets/images/two.png'),
+                                    SizedBox(
+                                      height: 15,
+                                    ),
+                                    getImageBox("""Key Resources,Led by the Executive Leadership Team – Plus 3 has a collective team of over 200 global consultants delivering the highest level of service to our clients’ projects.""",
+                                        'assets/images/three.png'),
+                                    SizedBox(
+                                      height: 15,
+                                    ),
+                                    getImageBox("""Enhanced Services,Forensic Graphics – in house preparation of movies and interactive presentations to demonstrate construction claim entitlements.
+System Dynamics – visual method of presenting disruption/uneconomic working claims recognised by the Society of Construction Law
+Bid Quantities and cost management.
+Training – Capacity Building.
+Project Management
+Resourcing and team augmentation.""",
+                                        'assets/images/four.png'),
+                                    SizedBox(
+                                      height: 15,
+                                    ),
+                                  ]),
+                                ],
+                              )),
+                          SizedBox(
                             height: 15,
                           ),
                           Container(
