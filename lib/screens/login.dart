@@ -158,7 +158,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   child: Image.asset('assets/images/logo.jpeg')),
               SizedBox(
-                height: 10,
+                height:10,
               ),
               new Card(
                   child: new Column(
