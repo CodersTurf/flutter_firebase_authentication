@@ -1,4 +1,5 @@
 import 'package:ccrwork_mobile/colors.dart';
+import 'package:ccrwork_mobile/screens/kooter.dart';
 import 'package:ccrwork_mobile/screens/looter.dart';
 import 'package:ccrwork_mobile/screens/widgets/footer.dart';
 import 'package:flutter/material.dart';
@@ -43,9 +44,10 @@ class _HomeState extends State<Home> {
                   SizedBox(
                     height: 25,
                   ),
-
-
-
+                  Image.asset('assets/images/c1.png'),
+                  SizedBox(
+                    height: 20,
+                  ),
                   getColoredBox("Project Consultancy",
                       """CCR provides a comprehensive range of construction and engineering services managed by our highly qualified teams of engineers, quantity surveyors, project managers, commercial managers and legal advisors.
 We are more than able to successfully manage and deliver on both domestic and international projects utilising our expertise in, contract and commercial advice, procurement, estimating, planning and scheduling, claims preparation, construction management, dispute resolution, and more.
@@ -53,6 +55,10 @@ We are more than able to successfully manage and deliver on both domestic and in
             """),
                   SizedBox(
                     height: 15,
+                  ),
+                  Image.asset('assets/images/c2.png'),
+                  SizedBox(
+                    height: 20,
                   ),
                   getColoredBox("Project Resourcing",
                       """CCR’s industry-leading commercial resources efficiently provide maximum practical support, from start to finish, in order to guarantee the success of all your construction and engineering projects, and to ensure the future success of all our partnerships.
@@ -67,7 +73,28 @@ We’ve carefully built a pool of highly experienced and available talent that a
                 ],
               ),
             ),
+            Text(
+              'What our clients say',
+              style:
+              (TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+
+
+            SizedBox(
+              height: 10,
+            ),
+
+            Kooter(),
+
+            SizedBox(
+              height: 30,
+            ),
+
             Footer()
+
           ],
         )));
   }
