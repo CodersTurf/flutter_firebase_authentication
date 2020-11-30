@@ -14,7 +14,7 @@ class _OutSource extends State<OutSource> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarDef.getAppBar(context, 'OutSource'),
+        appBar: AppBarDef.getAppBar(context, 'OutSource', true),
         drawer: AppDrawer(),
         body: Container(
           child: Text('OutSource'),

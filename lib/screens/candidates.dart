@@ -20,7 +20,7 @@ class _CandidateFormState extends State<CandidateForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarDef.getAppBar(context, 'Candidates'),
+        appBar: AppBarDef.getAppBar(context, 'Candidates', false),
         drawer: AppDrawer(),
         body: Container(
             color: Colors.grey[200],
@@ -167,43 +167,40 @@ class SubmitAction extends StatefulWidget {
 class _SubmitActionState extends State<SubmitAction> {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-            child: widget.isSubmit
-                ? SpinKitCircle(
-                    color: Colors.white,
-                    size: 25.0,
-                  )
-                : Container()),
-        Expanded(
-            child: RaisedButton(
-          color: Colors.black,
-          onPressed: () async {
-            if (widget._formKey.currentState.validate()) {
-              widget.isSubmit = true;
-              widget._formKey.currentState.save();
-              try {
-                await ApiHelper().createCandidate(widget.modal);
-                widget.isSubmit = false;
-                // setState(() {});
-                var snackBar =
-                    SnackBar(content: Text('Your details has been submitted!'));
-                Scaffold.of(context).showSnackBar(snackBar);
-              } catch (Exception) {
-                var snackBar = SnackBar(content: Text('Some error occurred!'));
-                Scaffold.of(context).showSnackBar(snackBar);
-              }
-            }
-          },
-          child: Text(
-            'Submit',
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-        ))
-      ],
-    );
+    return Padding(
+        padding: EdgeInsets.only(bottom: 10),
+        child: Row(
+          children: [
+            Expanded(
+                child: RaisedButton(
+              padding: EdgeInsets.all(15),
+              color: Colors.black,
+              onPressed: () async {
+                if (widget._formKey.currentState.validate()) {
+                  widget.isSubmit = true;
+                  widget._formKey.currentState.save();
+                  try {
+                    await ApiHelper().createCandidate(widget.modal);
+                    widget.isSubmit = false;
+                    // setState(() {});
+                    var snackBar = SnackBar(
+                        content: Text('Your details has been submitted!'));
+                    Scaffold.of(context).showSnackBar(snackBar);
+                  } catch (Exception) {
+                    var snackBar =
+                        SnackBar(content: Text('Some error occurred!'));
+                    Scaffold.of(context).showSnackBar(snackBar);
+                  }
+                }
+              },
+              child: Text(
+                'Submit',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ))
+          ],
+        ));
   }
 }
