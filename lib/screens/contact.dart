@@ -19,7 +19,12 @@ class _ContactsState extends State<Contacts> {
     return Scaffold(
         appBar: AppBarDef.getAppBar(context, 'Contacts'),
         drawer: AppDrawer(),
-        body: Container(
+        body:
+        Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/images/dp.jpg"),
+                    fit: BoxFit.cover)),
             child: SingleChildScrollView(
           child: Column(
             children: [Address(), ContactForm()],

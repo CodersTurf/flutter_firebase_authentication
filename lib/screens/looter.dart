@@ -17,7 +17,7 @@ class Looter extends StatelessWidget {
             color: AppColor.mainColor,
             ),
           CarouselSlider(
-            options: CarouselOptions(autoPlay: true,autoPlayInterval: Duration(seconds: 2), viewportFraction: 1, height: 300),
+            options: CarouselOptions(autoPlay: true,autoPlayInterval: Duration(seconds: 8), viewportFraction: 1, height: 300),
             items: imgList
                 .map((item) => Container(
               child: Center(
