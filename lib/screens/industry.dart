@@ -32,13 +32,15 @@ class _Industry extends State<Industry> {
                       Text(
                         'Industry Sectors',
                         style: (TextStyle(
-                            fontSize: 22, fontWeight: FontWeight.bold)),
+                            fontSize: 26, fontWeight: FontWeight.bold)),
                       ),
                       SizedBox(
                         height: 15,
                       ),
                       Text(
                         'Combined technical proficiency across multiple industries',
+                        style: (TextStyle(
+                            fontSize: 20,)),
                         textAlign: TextAlign.center,
                       ),
                       SizedBox(
@@ -53,7 +55,10 @@ We are more than able to successfully manage and deliver on both domestic and in
                       Container(
                           child: Column(
                         children: [
-                          Text('Industry sectors we cover are:'),
+                          Text('Industry sectors we cover are:', style: (TextStyle(
+                            fontSize: 20,)),
+              textAlign: TextAlign.center,
+            ),
                           SizedBox(
                             height: 10,
                           ),

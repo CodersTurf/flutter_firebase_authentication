@@ -30,9 +30,9 @@ class _OutSource extends State<OutSource> {
                   child: Column(
                     children: [
                       Text(
-                        """ Resourcing & Team Augmentation """,
+                        """ Resourcing & Team Augmentation """,textAlign:TextAlign.center ,
                         style: (TextStyle(
-                            fontSize: 22, fontWeight: FontWeight.bold)),
+                            fontSize: 26, fontWeight: FontWeight.bold)),
                       ),
                       SizedBox(
                         height: 15,

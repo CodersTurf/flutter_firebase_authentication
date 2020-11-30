@@ -147,7 +147,7 @@ class _LoginPageState extends State<LoginPage> {
                 image: DecorationImage(
                     image: AssetImage("assets/images/front.jpg"),
                     fit: BoxFit.cover)),
-            padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+             padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
             child: new Column(children: [
               SizedBox(
                 height: 30,
@@ -156,7 +156,10 @@ class _LoginPageState extends State<LoginPage> {
                   clipBehavior: Clip.hardEdge,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
-                  child: Image.asset('assets/images/logo.jpeg')),
+                  child: Image.asset('assets/images/logo.jpeg',
+                  height: 100.0,
+                    width:100.0,)
+              ),
               SizedBox(
                 height:10,
               ),

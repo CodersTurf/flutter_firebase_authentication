@@ -60,13 +60,14 @@ We are more than able to successfully manage and deliver on both domestic and in
                   SizedBox(
                     height: 20,
                   ),
-                  getColoredBox("Project Resourcing",
+                  getColoredBox(
+                      "Project Resourcing",
                       """CCR’s industry-leading commercial resources efficiently provide maximum practical support, from start to finish, in order to guarantee the success of all your construction and engineering projects, and to ensure the future success of all our partnerships.
 
 We’ve carefully built a pool of highly experienced and available talent that are all at your disposal, and we’re always ready to assign the right person to the right job.
 
 
-            """),
+            """, ),
                   SizedBox(
                     height: 20,
                   ),
@@ -74,7 +75,7 @@ We’ve carefully built a pool of highly experienced and available talent that a
               ),
             ),
             Text(
-              'What our clients say',
+              'What Our Clients Say',
               style:
               (TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
             ),

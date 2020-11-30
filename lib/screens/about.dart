@@ -30,7 +30,7 @@ class _AboutState extends State<About> {
                   child: Column(
                     children: [
                       Text(
-                        'Company Overview',
+                        'Company Overview',textAlign:TextAlign.center ,
                         style: (TextStyle(
                             fontSize: 22, fontWeight: FontWeight.bold)),
                       ),
@@ -38,7 +38,7 @@ class _AboutState extends State<About> {
                         height: 15,
                       ),
                       Text(
-                        'It was our common goal as well as our joint drive for industry excellence that brought Guardian Property & Construction (GPC) and Construction Claims Consultants together to create Contract & Commercial Resources (CCR).',
+                        'It was our common goal as well as our joint drive for industry excellence that brought Guardian Property & Construction (GPC) and Construction Claims Consultants together to create Contract & Commercial Resources (CCR).',textAlign:TextAlign.center,
                       ),
                       SizedBox(
                         height: 25,
@@ -59,18 +59,30 @@ CCR provides a comprehensive range of construction and engineering services mana
                         children: [
                           Text('Our Management team'),
                           SizedBox(
-                            height: 10,
+                            height: 30,
                           ),
                           Wrap(children: [
                             getImageBox('ANTHONY HILTON | Director',
                                 'assets/images/Anthony.jpg'),
+                            SizedBox(
+                              height: 50,
+                            ),
                             getImageBox('CHRIS THOMPSON | Director',
                                 'assets/images/Chris.jpg'),
+                            SizedBox(
+                              height: 50,
+                            ),
                             getImageBox('KAILASH AHUJA | Director',
                                 'assets/images/Kailash.jpg'),
-                            getImageBox("""WAYNE BRADSHAW |
+                            SizedBox(
+                              height: 50,
+                            ),
+                            getImageBox("""       WAYNE BRADSHAW |
          Regional Director, New Zealand""", 'assets/images/Wayne.jpg'),
-                            getImageBox("""CATHERINE WILLIAMS |
+                            SizedBox(
+                              height: 50,
+                            ),
+                            getImageBox("""        CATHERINE WILLIAMS |
          Manager, Planning & Programming""", 'assets/images/Catherine.jpg'),
                           ]),
                         ],

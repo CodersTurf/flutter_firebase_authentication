@@ -22,7 +22,7 @@ class _Global extends State<Global> {
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage("assets/images/1ss.jpg"),
-                    fit: BoxFit.cover)),
+                    fit: BoxFit.fitWidth)),
             child: SingleChildScrollView(
                 child: Column(
                   children: [
@@ -31,9 +31,9 @@ class _Global extends State<Global> {
                       child: Column(
                         children: [
                           Text(
-                            'CCR’s Strategic Acquisition in Asia',
-                            style: (TextStyle(
-                                fontSize: 22, fontWeight: FontWeight.bold)),
+                            'CCR’s Strategic Acquisition in Asia', textAlign: TextAlign.center,
+                            style: (TextStyle(fontSize: 22,
+                                fontWeight: FontWeight.bold)),
                           ),
                           SizedBox(
                             height: 15,
@@ -79,7 +79,7 @@ Peter Murphy, Managing Director,Quantum""",
                                   Wrap(children: [
                                     getImageBox("""Three Companies - One Name,
               From 6 April 2020, Plus 3, CCR and Quantum will partner together under the Plus 3 brand throughout Asia as one team with shared corporate and personal values to provide enhanced services to our clients.""",
-                                        'assets/images/one.png',),
+                                        'assets/images/one.png'),
                                     SizedBox(
                                       height: 15,
                                     ),
@@ -118,7 +118,7 @@ Resourcing and team augmentation.""",
                                   ),
                                   Wrap(children: [
                                     getImageBox('',
-                                        'assets/images/1s.jpg'),
+                                        'assets/images/1s.jpg',),
                                     getImageBox('',
                                         'assets/images/2d.jpg'),
                                     getImageBox('',
