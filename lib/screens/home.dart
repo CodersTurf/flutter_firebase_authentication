@@ -37,8 +37,7 @@ class _HomeState extends State<Home> {
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(
-
-                    height:10,
+                    height: 10,
                   ),
                   Looter(),
                   SizedBox(
@@ -61,13 +60,14 @@ We are more than able to successfully manage and deliver on both domestic and in
                     height: 20,
                   ),
                   getColoredBox(
-                      "Project Resourcing",
-                      """CCR’s industry-leading commercial resources efficiently provide maximum practical support, from start to finish, in order to guarantee the success of all your construction and engineering projects, and to ensure the future success of all our partnerships.
+                    "Project Resourcing",
+                    """CCR’s industry-leading commercial resources efficiently provide maximum practical support, from start to finish, in order to guarantee the success of all your construction and engineering projects, and to ensure the future success of all our partnerships.
 
 We’ve carefully built a pool of highly experienced and available talent that are all at your disposal, and we’re always ready to assign the right person to the right job.
 
 
-            """, ),
+            """,
+                  ),
                   SizedBox(
                     height: 20,
                   ),
@@ -76,26 +76,19 @@ We’ve carefully built a pool of highly experienced and available talent that a
             ),
             Text(
               'What Our Clients Say',
-              style:
-              (TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+              style: (TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 10,
             ),
-
-
             SizedBox(
               height: 10,
             ),
-
             Kooter(),
-
             SizedBox(
               height: 30,
             ),
-
             Footer()
-
           ],
         )));
   }
@@ -104,14 +97,11 @@ We’ve carefully built a pool of highly experienced and available talent that a
     Color color;
     return Container(
         padding: EdgeInsets.all(18),
-        color:color = Color.fromRGBO(240, 136, 46,0.5),
+        color: color = Color.fromRGBO(240, 136, 46, 0.5),
         child: Column(children: [
-          Row(
-            children: [
-              Text(header,
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold))
-            ],
-          ),
+          Text(header,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
           SizedBox(
             height: 10,
           ),
