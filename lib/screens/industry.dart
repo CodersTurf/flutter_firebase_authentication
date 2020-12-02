@@ -48,6 +48,7 @@ class _Industry extends State<Industry> {
                       ),
                       getColoredBox('',
                           """CCR provides a comprehensive range of construction and engineering services managed by our highly qualified teams of engineers, quantity surveyors, project managers, commercial managers and legal advisors.
+
 We are more than able to successfully manage and deliver on both domestic and international projects utilising our expertise in, contract and commercial advice, procurement, estimating, planning and scheduling, claims preparation, construction management, dispute resolution, and more."""),
                       SizedBox(
                         height: 15,

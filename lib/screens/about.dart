@@ -47,10 +47,9 @@ class _AboutState extends State<About> {
                       ),
                       getColoredBox('',
                           """The merging of these two industry specialists into one concentrated commercial practice marked a fresh approach to construction projects across Australia, New Zealand and Asia. Together as CCR, we now deliver a full suite of consultancy and resourcing solutions to serve as the backbone of any construction and engineering work.
-
+                          
 CCR provides a comprehensive range of construction and engineering services managed by our highly qualified teams of engineers, quantity surveyors, project managers, commercial managers and legal advisors.
    
- 
 We are more than able to successfully manage and deliver on both domestic and international projects utilising our expertise in, contract and commercial advice, procurement, estimating, planning and scheduling, claims preparation, construction management, dispute resolution, and more. Our core priority is to effectively transform traditional engineering and construction projects into commercially successful, sustainable business infrastructure which directly benefit both our clients and partners. Our expertise and unparalleled track record in both visionary project consultancy and advanced resourcing management has established our reputation in the field."""),
                       SizedBox(
                         height: 15,
@@ -78,13 +77,13 @@ We are more than able to successfully manage and deliver on both domestic and in
                             SizedBox(
                               height: 50,
                             ),
-                            getImageBox("""       WAYNE BRADSHAW |
-         Regional Director, New Zealand""", 'assets/images/Wayne.jpg'),
+                            getImageBox("""WAYNE BRADSHAW 
+ |  Regional Director, New Zealand | """, 'assets/images/Wayne.jpg'),
                             SizedBox(
                               height: 50,
                             ),
-                            getImageBox("""        CATHERINE WILLIAMS |
-         Manager, Planning & Programming""", 'assets/images/Catherine.jpg'),
+                            getImageBox("""CATHERINE WILLIAMS
+ | Manager, Planning & Programming | """, 'assets/images/Catherine.jpg'),
                           ]),
                         ],
                       )),

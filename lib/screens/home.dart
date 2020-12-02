@@ -103,7 +103,7 @@ We’ve carefully built a pool of highly experienced and available talent that a
           Row(
             children: [
               Text(header,
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.left,
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold))
             ],
           ),

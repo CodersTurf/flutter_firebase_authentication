@@ -42,6 +42,7 @@ class _OutSource extends State<OutSource> {
                       ),
                       getColoredBox('',
                           """CCR builds businesses on concrete foundations. We confidently provide solid support for sustainable business growth with our comprehensive and multidisciplinary suite of commercial resources, each designed specifically to provide viable solutions for every project’s needs. CCR’s industry-leading commercial resources efficiently provide maximum practical support, from start to finish, in order to guarantee the success of all your construction and engineering projects, and to ensure the future success of all our partnerships. We’ve carefully built a pool of highly experienced and available talent that are all at your disposal, and we’re always ready to assign the right person to the right job.
+
 Our decades of experience have taught us many valuable lessons and one of these is that every project will present unique challenges and most projects will present an unforeseeable hurdle at some point. This is where team augmentation has served our clients so well in the past and will continue to serve them in the future. From our pool of technical and commercial experts, we can deploy any resources to augment our clients’ teams as the situation demands.
                             """),
                       SizedBox(
