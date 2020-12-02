@@ -30,7 +30,8 @@ class _AboutState extends State<About> {
                   child: Column(
                     children: [
                       Text(
-                        'Company Overview',textAlign:TextAlign.center ,
+                        'Company Overview',
+                        textAlign: TextAlign.center,
                         style: (TextStyle(
                             fontSize: 22, fontWeight: FontWeight.bold)),
                       ),
@@ -38,7 +39,8 @@ class _AboutState extends State<About> {
                         height: 15,
                       ),
                       Text(
-                        'It was our common goal as well as our joint drive for industry excellence that brought Guardian Property & Construction (GPC) and Construction Claims Consultants together to create Contract & Commercial Resources (CCR).',textAlign:TextAlign.center,
+                        'It was our common goal as well as our joint drive for industry excellence that brought Guardian Property & Construction (GPC) and Construction Claims Consultants together to create Contract & Commercial Resources (CCR).',
+                        textAlign: TextAlign.center,
                       ),
                       SizedBox(
                         height: 25,
@@ -49,8 +51,7 @@ class _AboutState extends State<About> {
 CCR provides a comprehensive range of construction and engineering services managed by our highly qualified teams of engineers, quantity surveyors, project managers, commercial managers and legal advisors.
    
  
-   We are more than able to successfully manage and deliver on both domestic and international projects utilising our expertise in, contract and commercial advice, procurement, estimating, planning and scheduling, claims preparation, construction management, dispute resolution, and more. Our core priority is to effectively transform traditional engineering and construction projects into commercially successful, sustainable business infrastructure which directly benefit both our clients and partners. Our expertise and unparalleled track record in both visionary project consultancy and advanced resourcing management has established our reputation in the field."""),
-
+We are more than able to successfully manage and deliver on both domestic and international projects utilising our expertise in, contract and commercial advice, procurement, estimating, planning and scheduling, claims preparation, construction management, dispute resolution, and more. Our core priority is to effectively transform traditional engineering and construction projects into commercially successful, sustainable business infrastructure which directly benefit both our clients and partners. Our expertise and unparalleled track record in both visionary project consultancy and advanced resourcing management has established our reputation in the field."""),
                       SizedBox(
                         height: 15,
                       ),
@@ -102,13 +103,21 @@ CCR provides a comprehensive range of construction and engineering services mana
   }
 
   getImageBox(String name, String image) {
-    return Column(children: [
-      Image.asset(image),
-      SizedBox(
-        height: 5,
-      ),
-      Text(name)
-    ]);
+    return Container(
+        margin: EdgeInsets.all(10),
+        padding: EdgeInsets.only(bottom: 15),
+        color: Colors.white,
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          Image.asset(image),
+          Container(
+              child: Text(
+            name,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.black87,
+            ),
+          ))
+        ]));
   }
 
   getColoredBox(String header, String text) {
