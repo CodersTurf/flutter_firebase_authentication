@@ -99,7 +99,7 @@ We’ve carefully built a pool of highly experienced and available talent that a
         padding: EdgeInsets.all(18),
         color: color = Color.fromRGBO(240, 136, 46, 0.5),
         child: Column(children: [
-<<<<<<< HEAD
+
           Row(
             children: [
               Text(header,
@@ -107,11 +107,10 @@ We’ve carefully built a pool of highly experienced and available talent that a
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold))
             ],
           ),
-=======
+
           Text(header,
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
->>>>>>> cdd138a52c5b6f6df8218012a7dd6ec819080609
           SizedBox(
             height: 10,
           ),
