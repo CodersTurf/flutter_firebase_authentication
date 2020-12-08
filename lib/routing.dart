@@ -1,5 +1,6 @@
 import 'package:ccrwork_mobile/screens/about.dart';
 import 'package:ccrwork_mobile/screens/candidates.dart';
+import 'package:ccrwork_mobile/screens/chat.dart';
 import 'package:ccrwork_mobile/screens/contact.dart';
 import 'package:ccrwork_mobile/screens/default.dart';
 import 'package:ccrwork_mobile/screens/global.dart';
@@ -13,6 +14,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case '/':
     case 'home':
       return MaterialPageRoute(builder: (_) => Default());
+    case 'chat':
+      return MaterialPageRoute(builder: (_) => ChatScreen());
     case 'about':
       return MaterialPageRoute(builder: (_) => About());
     case 'contacts':
