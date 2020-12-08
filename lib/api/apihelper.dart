@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class ApiHelper {
   static final ApiHelper instance = ApiHelper._internal();
   static final db = FirebaseFirestore.instance.collection('contact');
+  static final dbC = FirebaseFirestore.instance.collection('candidate');
   factory ApiHelper() {
     return instance;
   }
@@ -20,10 +21,10 @@ class ApiHelper {
     }
   }
 
-  createCandidate(CandidateModel contact) async {
+  createCandidate(CandidateModel c) async {
     try {
-      return db
-          .add(contact.toJson())
+      return dbC
+          .add(c.toJson())
           .then((value) => print("User Added"))
           .catchError((error) => print("Failed to add user: $error"));
     } catch (ex) {

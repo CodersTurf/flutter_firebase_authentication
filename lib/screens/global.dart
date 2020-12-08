@@ -49,6 +49,7 @@ class _Global extends State<Global> {
                   ),
                   Text(
                     """“We believe the merger is a meeting of collective spirits and minds, dedicated to enhancing each of our individual services to our local and global clients under one umbrella. Working in partnership with Quantum and CCR was a natural step to share knowledge, resources and skills among our respective regions to offer our clients a cost-effective, localised hub with our renowned customer-focused approach to your projects.’’
+                    
 Mike McIver, CEO, Plus 3""",
                     style: TextStyle(color: Colors.black87),
                   ),
@@ -57,6 +58,7 @@ Mike McIver, CEO, Plus 3""",
                   ),
                   Text(
                     """“The merging of our three industry specialists into one company brings great value to all three organisations. Our clients will all capitalise on our respective specialisms and we all have the ability to deliver new services to enhance our client services.”
+
 Tony Hilton, Director, CCR""",
                     style: TextStyle(color: Colors.black87),
                   ),
@@ -65,6 +67,7 @@ Tony Hilton, Director, CCR""",
                   ),
                   Text(
                     """“Over the past three decades, with offices in Malaysia and Hong Kong, Plus 3 has become renowned across Asia for their high level of professional consultancy services to the construction industry. The Quantum family is extremely proud to be part of the Plus 3 restructure and to be working with CCR who are already a major force in the Australian construction Sector.”
+                    
 Peter Murphy, Managing Director,Quantum""",
                     style: TextStyle(color: Colors.black87),
                   ),

@@ -99,6 +99,15 @@ We’ve carefully built a pool of highly experienced and available talent that a
         padding: EdgeInsets.all(18),
         color: color = Color.fromRGBO(240, 136, 46, 0.5),
         child: Column(children: [
+
+          Row(
+            children: [
+              Text(header,
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold))
+            ],
+          ),
+
           Text(header,
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
